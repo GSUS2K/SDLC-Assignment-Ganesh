@@ -1,0 +1,24 @@
+SDLC & DevOps Fundamentals
+Project: The "Smart-Attend" Mobile App
+Assignment: The "Release Manager" Roleplay
+
+Task 1: The "Waterfall" Failure Analysis
+If we used the Traditional Waterfall Model for this project, adding the Biometric (Face ID) requirement halfway through would cause a massive crisis. Here are three main reasons why:
+
+1. Rigidity: The Waterfall model is super strict. You have to finish one phase completely before moving to the next. So, if we're already in the implementation or testing phase, we can't just go back and change the original requirements without completely stopping the project and starting over from the planning phase.
+2. Cost of Change: Making changes midway through is really expensive. If we already designed the database and wrote code just for Geo-fencing, we'd have to scrap a bunch of that work to add Face ID. We'd basically be throwing away time and money because the original "Blueprint" didn't include biometrics.
+3. Delayed Testing: In Waterfall, you do all the testing at the very end. If we tried to squeeze Face ID in during the middle of the 6-month cycle, we probably wouldn't find out if it actually works with the Geo-fencing until the very end. If there are major bugs (like the Face ID timing out), we'd be stuck trying to fix them right before the deadline.
+
+Task 2: The "Agile" Pivot (The Scrum Framework)
+To fix this, we need to switch to Agile, specifically the Scrum Framework. This lets us handle the new requirement by breaking the rest of the work into two 2-week Sprints:
+
+Sprint 1 (MVP - Minimum Viable Product)
+Focus: Get the basic app working so students can be tracked by location.
+Build the basic UI for students and teachers.
+Set up the user login using university IDs.
+Make the core Geo-fencing logic work so it checks if the student's phone is in the classroom.
+
+Sprint 2 (The Update)
+Focus: Add the Dean's new requirement and fix anything from Sprint 1.
+Integrate the Biometric (Face ID) logic to stop "proxy" attendance.
+Improve the teacher's reporting dashboard using the feedback we got from testing the MVP in Sprint 1.
